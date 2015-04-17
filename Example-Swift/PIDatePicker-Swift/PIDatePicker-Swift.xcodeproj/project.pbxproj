@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABF23BF91AE1824F0081B26E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF23BF81AE1824F0081B26E /* AppDelegate.swift */; };
+		ABF23C021AE1824F0081B26E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF23C011AE1824F0081B26E /* Images.xcassets */; };
+		ABF23C051AE1824F0081B26E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF23C031AE1824F0081B26E /* LaunchScreen.xib */; };
+		ABF23C111AE1824F0081B26E /* PIDatePicker_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF23C101AE1824F0081B26E /* PIDatePicker_SwiftTests.swift */; };
+		ABF23C1C1AE183000081B26E /* PIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF23C1A1AE183000081B26E /* PIDatePicker.swift */; };
+		ABF23C1D1AE183000081B26E /* PIDatePickerComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF23C1B1AE183000081B26E /* PIDatePickerComponents.swift */; };
+		ABF23C1F1AE184850081B26E /* PIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF23C1E1AE184850081B26E /* PIViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABF23C0B1AE1824F0081B26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABF23BEB1AE1824F0081B26E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABF23BF21AE1824F0081B26E;
+			remoteInfo = "PIDatePicker-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABF23BF31AE1824F0081B26E /* PIDatePicker-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PIDatePicker-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF23BF71AE1824F0081B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF23BF81AE1824F0081B26E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABF23C011AE1824F0081B26E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABF23C041AE1824F0081B26E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ABF23C0A1AE1824F0081B26E /* PIDatePicker-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PIDatePicker-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF23C0F1AE1824F0081B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF23C101AE1824F0081B26E /* PIDatePicker_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIDatePicker_SwiftTests.swift; sourceTree = "<group>"; };
+		ABF23C1A1AE183000081B26E /* PIDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PIDatePicker.swift; path = ../../../Pod/Classes/PIDatePicker.swift; sourceTree = "<group>"; };
+		ABF23C1B1AE183000081B26E /* PIDatePickerComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PIDatePickerComponents.swift; path = ../../../Pod/Classes/PIDatePickerComponents.swift; sourceTree = "<group>"; };
+		ABF23C1E1AE184850081B26E /* PIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABF23BF01AE1824F0081B26E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF23C071AE1824F0081B26E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABF23BEA1AE1824F0081B26E = {
+			isa = PBXGroup;
+			children = (
+				ABF23BF51AE1824F0081B26E /* PIDatePicker-Swift */,
+				ABF23C0D1AE1824F0081B26E /* PIDatePicker-SwiftTests */,
+				ABF23BF41AE1824F0081B26E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF23BF41AE1824F0081B26E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF23BF31AE1824F0081B26E /* PIDatePicker-Swift.app */,
+				ABF23C0A1AE1824F0081B26E /* PIDatePicker-SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABF23BF51AE1824F0081B26E /* PIDatePicker-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				ABF23BF81AE1824F0081B26E /* AppDelegate.swift */,
+				ABF23C1A1AE183000081B26E /* PIDatePicker.swift */,
+				ABF23C1B1AE183000081B26E /* PIDatePickerComponents.swift */,
+				ABF23C1E1AE184850081B26E /* PIViewController.swift */,
+				ABF23C011AE1824F0081B26E /* Images.xcassets */,
+				ABF23C031AE1824F0081B26E /* LaunchScreen.xib */,
+				ABF23BF61AE1824F0081B26E /* Supporting Files */,
+			);
+			path = "PIDatePicker-Swift";
+			sourceTree = "<group>";
+		};
+		ABF23BF61AE1824F0081B26E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF23BF71AE1824F0081B26E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABF23C0D1AE1824F0081B26E /* PIDatePicker-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABF23C101AE1824F0081B26E /* PIDatePicker_SwiftTests.swift */,
+				ABF23C0E1AE1824F0081B26E /* Supporting Files */,
+			);
+			path = "PIDatePicker-SwiftTests";
+			sourceTree = "<group>";
+		};
+		ABF23C0E1AE1824F0081B26E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF23C0F1AE1824F0081B26E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABF23BF21AE1824F0081B26E /* PIDatePicker-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF23C141AE1824F0081B26E /* Build configuration list for PBXNativeTarget "PIDatePicker-Swift" */;
+			buildPhases = (
+				ABF23BEF1AE1824F0081B26E /* Sources */,
+				ABF23BF01AE1824F0081B26E /* Frameworks */,
+				ABF23BF11AE1824F0081B26E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PIDatePicker-Swift";
+			productName = "PIDatePicker-Swift";
+			productReference = ABF23BF31AE1824F0081B26E /* PIDatePicker-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABF23C091AE1824F0081B26E /* PIDatePicker-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF23C171AE1824F0081B26E /* Build configuration list for PBXNativeTarget "PIDatePicker-SwiftTests" */;
+			buildPhases = (
+				ABF23C061AE1824F0081B26E /* Sources */,
+				ABF23C071AE1824F0081B26E /* Frameworks */,
+				ABF23C081AE1824F0081B26E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABF23C0C1AE1824F0081B26E /* PBXTargetDependency */,
+			);
+			name = "PIDatePicker-SwiftTests";
+			productName = "PIDatePicker-SwiftTests";
+			productReference = ABF23C0A1AE1824F0081B26E /* PIDatePicker-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF23BEB1AE1824F0081B26E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Prolific Interactive";
+				TargetAttributes = {
+					ABF23BF21AE1824F0081B26E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					ABF23C091AE1824F0081B26E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = ABF23BF21AE1824F0081B26E;
+					};
+				};
+			};
+			buildConfigurationList = ABF23BEE1AE1824F0081B26E /* Build configuration list for PBXProject "PIDatePicker-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABF23BEA1AE1824F0081B26E;
+			productRefGroup = ABF23BF41AE1824F0081B26E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF23BF21AE1824F0081B26E /* PIDatePicker-Swift */,
+				ABF23C091AE1824F0081B26E /* PIDatePicker-SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABF23BF11AE1824F0081B26E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF23C051AE1824F0081B26E /* LaunchScreen.xib in Resources */,
+				ABF23C021AE1824F0081B26E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF23C081AE1824F0081B26E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABF23BEF1AE1824F0081B26E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF23C1C1AE183000081B26E /* PIDatePicker.swift in Sources */,
+				ABF23BF91AE1824F0081B26E /* AppDelegate.swift in Sources */,
+				ABF23C1D1AE183000081B26E /* PIDatePickerComponents.swift in Sources */,
+				ABF23C1F1AE184850081B26E /* PIViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF23C061AE1824F0081B26E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF23C111AE1824F0081B26E /* PIDatePicker_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABF23C0C1AE1824F0081B26E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABF23BF21AE1824F0081B26E /* PIDatePicker-Swift */;
+			targetProxy = ABF23C0B1AE1824F0081B26E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABF23C031AE1824F0081B26E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF23C041AE1824F0081B26E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABF23C121AE1824F0081B26E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABF23C131AE1824F0081B26E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABF23C151AE1824F0081B26E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PIDatePicker-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABF23C161AE1824F0081B26E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PIDatePicker-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ABF23C181AE1824F0081B26E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PIDatePicker-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIDatePicker-Swift.app/PIDatePicker-Swift";
+			};
+			name = Debug;
+		};
+		ABF23C191AE1824F0081B26E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PIDatePicker-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIDatePicker-Swift.app/PIDatePicker-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABF23BEE1AE1824F0081B26E /* Build configuration list for PBXProject "PIDatePicker-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF23C121AE1824F0081B26E /* Debug */,
+				ABF23C131AE1824F0081B26E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF23C141AE1824F0081B26E /* Build configuration list for PBXNativeTarget "PIDatePicker-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF23C151AE1824F0081B26E /* Debug */,
+				ABF23C161AE1824F0081B26E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABF23C171AE1824F0081B26E /* Build configuration list for PBXNativeTarget "PIDatePicker-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF23C181AE1824F0081B26E /* Debug */,
+				ABF23C191AE1824F0081B26E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABF23BEB1AE1824F0081B26E /* Project object */;
+}
