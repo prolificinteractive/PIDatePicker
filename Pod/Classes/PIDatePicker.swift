@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
 
     // MARK: -
@@ -279,7 +281,6 @@ public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate 
     // MARK: - 
     // MARK: Protocols
     // MARK: UIPickerViewDelegate
-    
     
     public func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.setDate(NSDate())
