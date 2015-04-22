@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39BD7A91B1579A05D23B0AD9 /* Pods_PIDatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986896FB7A6C6D55D0804CF6 /* Pods_PIDatePicker.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -50,6 +51,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		986896FB7A6C6D55D0804CF6 /* Pods_PIDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4757EA1AE5920500A0F3D4 /* PIDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4757EB1AE5920500A0F3D4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6136C91AE58859005B28A2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				39BD7A91B1579A05D23B0AD9 /* Pods_PIDatePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
+				986896FB7A6C6D55D0804CF6 /* Pods_PIDatePicker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -474,8 +478,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIDatePicker/PIDatePicker-Prefix.pch";
 				INFOPLIST_FILE = "PIDatePicker/PIDatePicker-Info.plist";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -490,8 +494,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIDatePicker/PIDatePicker-Prefix.pch";
 				INFOPLIST_FILE = "PIDatePicker/PIDatePicker-Info.plist";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
