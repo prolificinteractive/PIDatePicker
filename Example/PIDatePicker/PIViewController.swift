@@ -7,16 +7,11 @@
 //
 
 import UIKit
+import PIDatePicker
 
 class PIViewController : UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.configureView()
-    }
-    
-    func configureView() {
         
+    override func loadView() {
         var rootView = UIView()
         rootView.backgroundColor = UIColor.whiteColor()
         
@@ -32,7 +27,7 @@ class PIViewController : UIViewController {
         rootView.addConstraint(centerYConstraint)
         
         datePicker.backgroundColor = UIColor.greenColor()
-
+        
         self.view = rootView
     }
 }
