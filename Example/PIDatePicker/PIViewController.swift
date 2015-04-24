@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PIDatePicker
 
 class PIViewController : UIViewController {
     
@@ -19,17 +18,20 @@ class PIViewController : UIViewController {
     func configureView() {
         
         var rootView = UIView()
-        rootView.backgroundColor = UIColor.whiteColor()        
+        rootView.backgroundColor = UIColor.whiteColor()
         
         var datePicker = PIDatePicker()
+        datePicker.minimumDate = NSDate()
         rootView.addSubview(datePicker)
-                
+        
         datePicker.setTranslatesAutoresizingMaskIntoConstraints(false)
         var centerXConstraint = NSLayoutConstraint(item: datePicker, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: rootView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0)
         rootView.addConstraint(centerXConstraint)
         
         var centerYConstraint = NSLayoutConstraint(item: datePicker, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: rootView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0)
         rootView.addConstraint(centerYConstraint)
+        
+        datePicker.backgroundColor = UIColor.greenColor()
 
         self.view = rootView
     }

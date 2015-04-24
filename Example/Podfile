@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
 
-target 'PIDatePicker-Example’, :exclusive => true do
+target 'PIDatePicker', :exclusive => true do
   pod "PIDatePicker", :path => "../"
 end
 
