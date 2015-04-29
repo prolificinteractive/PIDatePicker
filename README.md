@@ -15,9 +15,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 PIDatePicker is available through [Cocoapods](https://github.com/prolificinteractive/PIDatePicker). To install
 it, simply add the following line to your Podfile:
 
-'''
+```ruby
 pod "PIDatePicker", '~> 0.1.0'
-'''
+```
 
 Because this project was written in Swift, your project must have a minimum target of iOS 8.0 or greater. Cocoapods
 does not support Swift pods for previous iOS versions. If you need to use this on a previous version of iOS, 
