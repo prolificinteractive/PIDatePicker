@@ -8,20 +8,52 @@ aims to replicate the default UIDatePicker functionality while adding additional
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory. 
+PIDatePicker is available through [Cocoapods](https://cocoapods.org/?q=PIDatePicker). 
 
-## Installation
+The source code is available on [GitHub](https://github.com/prolificinteractive/PIDatePicker). 
 
-PIDatePicker is available through [Cocoapods](https://github.com/prolificinteractive/PIDatePicker). To install
-it, simply add the following line to your Podfile:
+To use in your projects, simply add the following line to your `Podfile`:
 
 ```ruby
 pod "PIDatePicker", '~> 0.1.0'
 ```
 
+You can then use `PIDatePicker` by importing it into your files:
+
+```ruby
+import PIDatePicker
+```
+
 Because this project was written in Swift, your project must have a minimum target of iOS 8.0 or greater. Cocoapods
 does not support Swift pods for previous iOS versions. If you need to use this on a previous version of iOS, 
 import the code files directly into your project or by using git submodules.
+
+## Customization
+
+There are several options available for customizing your date picker:
+
+| Property              | Type      | Description                                                                                                       |
+|:----------------------|:----------|:------------------------------------------------------------------------------------------------------------------|
+| font			        | UIFont    | Sets the font that the date picker will use to display the dates. By default, it uses a system font of size 15.   |
+| textColor             | UIColor   | Set the color of the text. By default, it uses `UIColor.blackColor()`.                                            |
+| backgroundColor       | UIColor   | Set the background color of the date picker. By default, it is a clear color.                                     |
+| minimumDate 		    | UIDate    | The minimum selectable date allowed by the date picker. Defaults to `NSDate.distantPast()`.                       |
+| maximumDate		    | UIDate    | The maximum selectable date allowed by the date picker. Defaults to `NSDate.distantFuture()`.                     |
+| locale		        | NSLocale  | The locale of the calendar used for formatting the date. By default, this uses the device's locale.               |
+
+The following public methods are available for calling in your module:
+
+| Method                					| Description                                           |
+|:------------------------------------------|:------------------------------------------------------|
+| reloadAllComponents() 					| Reloads all of the components of the date picker.		|
+| setDate(date: NSDate, animated: Bool)     | Sets the current date of the date picker.             |
+
+
+## Contributing
+
+To report a bug or enhancement request, feel free to file an issue under the respective heading. 
+
+If you wish to contribute to the project, fork this repo and submit a pull request. 
 
 ## License
 
