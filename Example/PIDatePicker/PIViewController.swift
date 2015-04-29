@@ -26,8 +26,6 @@ class PIViewController : UIViewController {
         var centerYConstraint = NSLayoutConstraint(item: datePicker, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: rootView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0)
         rootView.addConstraint(centerYConstraint)
         
-        datePicker.backgroundColor = UIColor.greenColor()
-        
         self.view = rootView
     }
 }
