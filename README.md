@@ -20,7 +20,7 @@ pod "PIDatePicker", '~> 0.1.0'
 
 You can then use `PIDatePicker` by importing it into your files:
 
-```ruby
+```swift
 import PIDatePicker
 ```
 
