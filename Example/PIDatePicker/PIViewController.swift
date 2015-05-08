@@ -30,4 +30,14 @@ class PIViewController : UIViewController {
         self.datePicker.textColor = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
         self.datePicker.reloadAllComponents()
     }
+    
+    @IBAction func randomizeFont(sender: AnyObject) {
+        var font: UIFont
+        let familyNames = UIFont.familyNames()
+        let randomNumber = Int(arc4random_uniform(UInt32(familyNames.count)))
+        let familyName: String = familyNames[randomNumber] as! String
+        let fontName: String = UIFont.fontNamesForFamilyName(familyName)[0] as! String
+        self.datePicker.font = UIFont(name: fontName, size: 14)!
+        self.datePicker.reloadAllComponents()
+    }
 }
