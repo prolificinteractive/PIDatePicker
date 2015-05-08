@@ -10,22 +10,14 @@ import UIKit
 import PIDatePicker
 
 class PIViewController : UIViewController {
+    
+    @IBOutlet weak var datePicker: PIDatePicker!
+    
+    let validPast: NSTimeInterval = -10000000000
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
-    override func loadView() {
-        var rootView = UIView()
-        rootView.backgroundColor = UIColor.whiteColor()
-        
-        var datePicker = PIDatePicker()
-        datePicker.minimumDate = NSDate()
-        rootView.addSubview(datePicker)
-        
-        datePicker.setTranslatesAutoresizingMaskIntoConstraints(false)
-        var centerXConstraint = NSLayoutConstraint(item: datePicker, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: rootView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0)
-        rootView.addConstraint(centerXConstraint)
-        
-        var centerYConstraint = NSLayoutConstraint(item: datePicker, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: rootView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0)
-        rootView.addConstraint(centerYConstraint)
-        
-        self.view = rootView
+        self.datePicker.minimumDate = NSDate().dateByAddingTimeInterval(validPast)
     }
 }
