@@ -12,6 +12,7 @@ import PIDatePicker
 class PIViewController : UIViewController {
     
     @IBOutlet weak var datePicker: PIDatePicker!
+    @IBOutlet weak var label: UILabel!
     
     let validPast: NSTimeInterval = -10000000000
     
@@ -19,6 +20,7 @@ class PIViewController : UIViewController {
         super.viewWillAppear(animated)
         
         self.datePicker.minimumDate = NSDate().dateByAddingTimeInterval(validPast)
+        self.datePicker.delegate = self
     }
 
     @IBAction func randomizeColor(sender: AnyObject) {
@@ -39,5 +41,13 @@ class PIViewController : UIViewController {
         let fontName: String = UIFont.fontNamesForFamilyName(familyName)[0] as! String
         self.datePicker.font = UIFont(name: fontName, size: 14)!
         self.datePicker.reloadAllComponents()
+    }
+}
+
+extension PIViewController: PIDatePickerDelegate {
+    func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int) {
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
+        self.label.text = dateFormatter.stringFromDate(pickerView.getDate())
     }
 }
