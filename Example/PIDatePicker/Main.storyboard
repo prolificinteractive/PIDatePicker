@@ -33,6 +33,9 @@
                                 <state key="normal" title="Random Color">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="randomizeColor:" destination="42N-tQ-fvD" eventType="touchUpInside" id="XMP-0r-2yF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G44-H8-jKp">
                                 <rect key="frame" x="313" y="275" width="146" height="50"/>
