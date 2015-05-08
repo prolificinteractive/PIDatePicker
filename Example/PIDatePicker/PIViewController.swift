@@ -20,4 +20,14 @@ class PIViewController : UIViewController {
         
         self.datePicker.minimumDate = NSDate().dateByAddingTimeInterval(validPast)
     }
+
+    @IBAction func randomizeColor(sender: AnyObject) {
+        
+        var red = CGFloat(arc4random_uniform(255))
+        var green = CGFloat(arc4random_uniform(255))
+        var blue = CGFloat(arc4random_uniform(255))
+        
+        self.datePicker.textColor = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
+        self.datePicker.reloadAllComponents()
+    }
 }
