@@ -12,6 +12,7 @@ public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate 
 
     // MARK: -
     // MARK: Public Properties
+    public var delegate: PIDatePickerDelegate?
     
     /// The font for the date picker.
     public var font = UIFont.systemFontOfSize(15.0)
@@ -38,6 +39,10 @@ public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate 
         didSet {
             self.calendar.locale = self.locale
         }
+    }
+    
+    public func getDate() -> NSDate {
+        return self.date
     }
 
     /// The current date value of the date picker.
@@ -490,6 +495,8 @@ public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate 
             
             self.date = self.calendar.dateFromComponents(components)!
         }
+        
+        self.delegate?.pickerView(self, didSelectRow: row, inComponent: component)
     }
 
     public func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {

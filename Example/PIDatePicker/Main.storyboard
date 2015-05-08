@@ -50,15 +50,27 @@
                                     <action selector="randomizeFont:" destination="42N-tQ-fvD" eventType="touchUpInside" id="ods-v7-GVO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKU-dB-Qgb">
+                                <rect key="frame" x="209" y="345" width="183" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="6J9-av-dMX"/>
+                                    <constraint firstAttribute="height" constant="21" id="A2d-DU-ngr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="xh8-4R-V3E" secondAttribute="centerX" constant="146.5" id="8Ap-pJ-ZRh"/>
                             <constraint firstItem="XUL-K8-ur5" firstAttribute="top" secondItem="ZxE-uC-JeZ" secondAttribute="bottom" constant="-20" id="G03-nO-TrM"/>
+                            <constraint firstItem="AKU-dB-Qgb" firstAttribute="top" secondItem="G44-H8-jKp" secondAttribute="bottom" constant="20" id="eM5-Zn-8zX"/>
                             <constraint firstItem="xh8-4R-V3E" firstAttribute="top" secondItem="XUL-K8-ur5" secondAttribute="bottom" constant="63" id="f8P-7u-8fk"/>
                             <constraint firstItem="XUL-K8-ur5" firstAttribute="leading" secondItem="r7S-n0-yCC" secondAttribute="leadingMargin" constant="-16" id="hbh-Xe-MSm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XUL-K8-ur5" secondAttribute="trailing" constant="-16" id="jBj-W6-2Jc"/>
                             <constraint firstItem="G44-H8-jKp" firstAttribute="centerY" secondItem="xh8-4R-V3E" secondAttribute="centerY" id="k3k-ce-ElU"/>
+                            <constraint firstAttribute="centerX" secondItem="AKU-dB-Qgb" secondAttribute="centerX" constant="-0.5" id="yYb-l8-afJ"/>
                             <constraint firstAttribute="centerX" secondItem="xh8-4R-V3E" secondAttribute="centerX" constant="81.5" id="yoe-we-2cb"/>
                             <constraint firstAttribute="centerX" secondItem="G44-H8-jKp" secondAttribute="centerX" constant="-86" id="zSb-uY-bYF"/>
                         </constraints>
@@ -70,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="XUL-K8-ur5" id="SMl-I9-g5s"/>
+                        <outlet property="label" destination="AKU-dB-Qgb" id="PIz-gG-8HH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iL-eN-Ks0" userLabel="First Responder" sceneMemberID="firstResponder"/>
