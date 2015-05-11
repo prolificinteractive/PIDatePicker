@@ -48,6 +48,13 @@ The following public methods are available for calling in your module:
 | reloadAllComponents() 					| Reloads all of the components of the date picker.		|
 | setDate(date: NSDate, animated: Bool)     | Sets the current date of the date picker.             |
 
+## Delegate
+
+A class can implement `PIDatePickerDelegate` and the following method to respond to changes in user selection.
+
+```swift
+func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int)
+```
 
 ## Contributing
 
