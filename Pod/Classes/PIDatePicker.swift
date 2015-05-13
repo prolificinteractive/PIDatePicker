@@ -490,9 +490,9 @@ public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate 
             }
             
             self.date = self.calendar.dateFromComponents(components)!
+            
+            self.delegate?.datePicker(self, didChangeToDate: self.date, byUpdatingComponent: datePickerComponent)
         }
-        
-        self.delegate?.pickerView(self, didSelectRow: row, inComponent: component)
     }
 
     public func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {

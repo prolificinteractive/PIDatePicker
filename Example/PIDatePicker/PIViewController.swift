@@ -54,7 +54,7 @@ class PIViewController : UIViewController, PIDatePickerDelegate {
     //MARK: Protocols
     
     //MARK: PIDatePickerDelegate
-    func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int) {
+    func datePicker(datePicker: PIDatePicker, didChangeToDate date: NSDate, byUpdatingComponent component: PIDatePickerComponents) {
         self.updateLabelText()
     }
 }

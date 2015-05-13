@@ -6,7 +6,7 @@
 //
 //
 
-enum PIDatePickerComponents : Character  {
+public enum PIDatePickerComponents : Character  {
     case Invalid = "!",
             Year = "y",
             Month = "M",
