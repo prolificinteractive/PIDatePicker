@@ -40,13 +40,9 @@ public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate 
             self.calendar.locale = self.locale
         }
     }
-    
-    public func getDate() -> NSDate {
-        return self.date
-    }
 
     /// The current date value of the date picker.
-    private(set) var date = NSDate()
+    public private(set) var date = NSDate()
 
     // MARK: -
     // MARK: Private Variables
