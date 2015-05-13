@@ -9,7 +9,7 @@
 import UIKit
 import PIDatePicker
 
-class PIViewController : UIViewController {
+class PIViewController : UIViewController, PIDatePickerDelegate {
     
     @IBOutlet weak var datePicker: PIDatePicker!
     @IBOutlet weak var label: UILabel!
@@ -21,6 +21,7 @@ class PIViewController : UIViewController {
         
         self.datePicker.minimumDate = NSDate().dateByAddingTimeInterval(validPast)
         self.datePicker.delegate = self
+        self.updateLabelText()
     }
 
     @IBAction func randomizeColor(sender: AnyObject) {
@@ -34,20 +35,26 @@ class PIViewController : UIViewController {
     }
     
     @IBAction func randomizeFont(sender: AnyObject) {
-        var font: UIFont
         let familyNames = UIFont.familyNames()
         let randomNumber = Int(arc4random_uniform(UInt32(familyNames.count)))
         let familyName: String = familyNames[randomNumber] as! String
         let fontName: String = UIFont.fontNamesForFamilyName(familyName)[0] as! String
+        
         self.datePicker.font = UIFont(name: fontName, size: 14)!
         self.datePicker.reloadAllComponents()
     }
-}
-
-extension PIViewController: PIDatePickerDelegate {
-    func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int) {
-        var dateFormatter = NSDateFormatter()
+    
+    private func updateLabelText() {
+        let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = .ShortStyle
-        self.label.text = dateFormatter.stringFromDate(pickerView.date)
+        self.label.text = dateFormatter.stringFromDate(self.datePicker.date)
+    }
+
+    //MARK: -
+    //MARK: Protocols
+    
+    //MARK: PIDatePickerDelegate
+    func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int) {
+        self.updateLabelText()
     }
 }
