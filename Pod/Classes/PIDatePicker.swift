@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
+public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelegate {
 
     // MARK: -
     // MARK: Public Properties
@@ -490,6 +490,7 @@ public class PIDatePicker: UIView, UIPickerViewDataSource, UIPickerViewDelegate 
             }
             
             self.date = self.calendar.dateFromComponents(components)!
+            self.sendActionForControlEvents(.ValueChanged)
         }
         
         self.delegate?.pickerView(self, didSelectRow: row, inComponent: component)
