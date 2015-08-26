@@ -215,6 +215,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PI;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Christopher Jones";
 				TargetAttributes = {

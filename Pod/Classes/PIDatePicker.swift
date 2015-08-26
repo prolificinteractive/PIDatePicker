@@ -490,7 +490,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
             }
             
             self.date = self.calendar.dateFromComponents(components)!
-            self.sendActionForControlEvents(.ValueChanged)
+            self.sendActionsForControlEvents(.ValueChanged)
         }
         
         self.delegate?.pickerView(self, didSelectRow: row, inComponent: component)
