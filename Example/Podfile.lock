@@ -1,5 +1,5 @@
 PODS:
-  - PIDatePicker (0.1.1)
+  - PIDatePicker (0.1.2)
 
 DEPENDENCIES:
   - PIDatePicker (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PIDatePicker: 9cf4bf21086fb29ab89a03735d8525c13c7fe05f
+  PIDatePicker: 36548c3466dec16e7918e533486ffe86687f65e3
 
 COCOAPODS: 0.39.0

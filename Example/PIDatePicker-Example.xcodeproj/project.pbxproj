@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36E6A386DFF591AEF793E71F /* Pods_PIDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7612026848609510CC5A95FB /* Pods_PIDatePicker_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		36E6A386DFF591AEF793E71F /* Pods_PIDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7612026848609510CC5A95FB /* Pods_PIDatePicker_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
