@@ -25,20 +25,19 @@ class PIViewController : UIViewController {
 
     @IBAction func randomizeColor(sender: AnyObject) {
         
-        var red = CGFloat(arc4random_uniform(255))
-        var green = CGFloat(arc4random_uniform(255))
-        var blue = CGFloat(arc4random_uniform(255))
+        let red = CGFloat(arc4random_uniform(255))
+        let green = CGFloat(arc4random_uniform(255))
+        let blue = CGFloat(arc4random_uniform(255))
         
         self.datePicker.textColor = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
         self.datePicker.reloadAllComponents()
     }
     
     @IBAction func randomizeFont(sender: AnyObject) {
-        var font: UIFont
         let familyNames = UIFont.familyNames()
         let randomNumber = Int(arc4random_uniform(UInt32(familyNames.count)))
-        let familyName: String = familyNames[randomNumber] as! String
-        let fontName: String = UIFont.fontNamesForFamilyName(familyName)[0] as! String
+        let familyName: String = familyNames[randomNumber]
+        let fontName: String = UIFont.fontNamesForFamilyName(familyName)[0]
         self.datePicker.font = UIFont(name: fontName, size: 14)!
         self.datePicker.reloadAllComponents()
     }
@@ -46,7 +45,7 @@ class PIViewController : UIViewController {
 
 extension PIViewController: PIDatePickerDelegate {
     func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int) {
-        var dateFormatter = NSDateFormatter()
+        let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = .ShortStyle
         self.label.text = dateFormatter.stringFromDate(pickerView.date)
     }
