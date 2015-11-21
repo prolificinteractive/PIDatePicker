@@ -179,8 +179,14 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
         let firstComponentOrderingString = componentOrdering[componentOrdering.startIndex.advancedBy(0)]
         let lastComponentOrderingString = componentOrdering[componentOrdering.startIndex.advancedBy(componentOrdering.characters.count - 1)]
 
-        let characterSet = NSCharacterSet(charactersInString: String(firstComponentOrderingString) + String(lastComponentOrderingString))
-        componentOrdering = componentOrdering.stringByTrimmingCharactersInSet(characterSet).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let characterSet = NSMutableCharacterSet()
+        
+        characterSet.formUnionWithCharacterSet(NSCharacterSet(charactersInString: String(firstComponentOrderingString) +
+            String(lastComponentOrderingString)))
+        characterSet.formUnionWithCharacterSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        characterSet.formUnionWithCharacterSet(NSCharacterSet.punctuationCharacterSet())
+        
+        componentOrdering = componentOrdering.stringByTrimmingCharactersInSet(characterSet)
 
         let remainingValue = componentOrdering[componentOrdering.startIndex.advancedBy(0)]
 
