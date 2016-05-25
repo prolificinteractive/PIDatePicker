@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol PIDatePickerDelegate {
+@objc public protocol PIDatePickerDelegate {
     func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int)
 }
