@@ -7,8 +7,8 @@
 //
 
 enum PIDatePickerComponents : Character  {
-    case Invalid = "!",
-            Year = "y",
-            Month = "M",
-            Day = "d"
+    case invalid = "!",
+            year = "y",
+            month = "M",
+            day = "d"
 }

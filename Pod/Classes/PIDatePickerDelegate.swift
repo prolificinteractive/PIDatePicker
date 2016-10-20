@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol PIDatePickerDelegate {
-    func pickerView(pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int)
+    func pickerView(_ pickerView: PIDatePicker, didSelectRow row: Int, inComponent component: Int)
 }
