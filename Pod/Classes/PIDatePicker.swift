@@ -95,8 +95,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     /**
      Handles the common initialization amongst all init()
      */
-    func commonInit() {
-        self.translatesAutoresizingMaskIntoConstraints = false
+    func commonInit() {        
         self.pickerView.translatesAutoresizingMaskIntoConstraints = false
         
         self.pickerView.dataSource = self
