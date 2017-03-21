@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PIDatePicker"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "A control that mimics UIDatePicker functionality with added customization options."
   s.description      = <<-DESC
                         This is a UIControl that mimics the functionality of UIDatePicker while also adding additional customization options that are not available using the base UIDatePicker
