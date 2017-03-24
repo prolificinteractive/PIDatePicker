@@ -93,16 +93,14 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     /**
-     Handles the common initialization amongst all init()
-     */
-    func commonInit() {
-        self.translatesAutoresizingMaskIntoConstraints = false
-        
+    Handles the common initialization amongst all init()
+    */
+    func commonInit() {     
         self.pickerView.dataSource = self
         self.pickerView.delegate = self
         
         self.addSubview(self.pickerView)
-        
+        pickerView.translatesAutoresizingMaskIntoConstraints = false
         let topConstraint = NSLayoutConstraint(item: self.pickerView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
         let bottomConstraint = NSLayoutConstraint(item: self.pickerView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
         let leftConstraint = NSLayoutConstraint(item: self.pickerView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0)
