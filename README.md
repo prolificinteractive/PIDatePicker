@@ -1,4 +1,6 @@
-# PIDatePicker
+# [DEPRECATED] PIDatePicker
+
+⚠️ **This repository is no longer maintained or supported. New pull requests will not be reviewed.** ⚠️
 
 ![PIDatePicker](https://raw.github.com/prolificinteractive/pidatepicker/master/Images/PIDatePicker.gif)
 
